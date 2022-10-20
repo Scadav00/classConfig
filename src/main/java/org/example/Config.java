@@ -1,11 +1,9 @@
 package org.example;
 
 public class Config {
-
     ConfigPlotly plotly;
     ConfigEs es;
     ConfigNas nas;
-
 
     private class ConfigPlotly {
         private String host;
@@ -19,9 +17,7 @@ public class Config {
             private String name3;
             private String name4;
         }
-
     }
-
     private class ConfigEs {
         private String host;
         private int port;
@@ -33,7 +29,6 @@ public class Config {
 
         private class Gw{}
         private class Fw{}
-
     }
 
     private class ConfigNas{
