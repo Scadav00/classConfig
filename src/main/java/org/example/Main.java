@@ -28,9 +28,11 @@ public class Main {
     }
     private static void deserializeConfigNested() throws Exception {
 
-        String file = "/home/ds/IdeaProjects/ClassConfig/src/main/java/org/example/Config.Json";
+//        json path from config to configSimple changed
+        String file = "/home/ds/IdeaProjects/ClassConfig/src/main/java/org/example/ConfigSimple.json";
         String jsonConfig = readFileAsString(file);
 
+//        String jsonConfig = "{ 'plotly':{ 'host':'0.0.0.0', 'port':8051, 'debug':true, 'title':'KBA - Dashboard', 'boxes':{ 'name1':'1', 'name2':'2', 'name3':'3', 'name4':'4'}}}";
         Config config = new Gson().fromJson(jsonConfig, Config.class);
 
     }
