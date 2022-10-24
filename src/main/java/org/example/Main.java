@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Welcome to Gson 02-Nested Object");
 
          serializeBoxesNested();
-        deserializeBoxesNested();
+        // deserializeBoxesNested();
         }
         private static void serializeBoxesNested() {
             Plotly configSimple = new Plotly(
