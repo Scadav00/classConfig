@@ -1,49 +1,80 @@
 package org.example;
 
 public class Config {
-
     ConfigPlotly plotly;
-    ConfigEs es;
-    ConfigNas nas;
+//    ConfigEs es;
+//    ConfigNas nas;
 
-
-    private class ConfigPlotly {
+    class ConfigPlotly {
         private String host;
         private int port;
         private boolean debug;
         private String title;
 
-        private class Boxes {
-            private String name1;
-            private String name2;
-            private String name3;
-            private String name4;
+        public ConfigPlotly(String host, int port, boolean debug, String title) {
+            this.host = host;
+            this.port = port;
+            this.debug = debug;
+            this.title = title;
         }
 
-    }
+        class Boxes {
+            public String name1;
+            public String name2;
+            public String name3;
+            public String name4;
 
-    private class ConfigEs {
-        private String host;
-        private int port;
-
-        private class Srv {
-            private String index;
-            private String countQuery;
+//            private Boxes() {}
+//
+//            public Boxes(String name1, String name2, String name3, String name4) {
+//                this.name1 = name1;
+//                this.name2 = name2;
+//                this.name3 = name3;
+//                this.name4 = name4;
+//            }
         }
 
-        private class Gw{}
-        private class Fw{}
 
     }
-
-    private class ConfigNas{
-        private String host;
-        private String port;
-        private String user;
-        private String password;
-
-        private class Storage{
-            private int limit_percentage;
-        }
-    }
+//    private class ConfigEs {
+//        private String host;
+//        private int port;
+//
+//        private class Srv {
+//            private String index;
+//            private String countQuery;
+//
+//            private Srv() {}
+//
+//            public Srv(String index, String countQuery) {
+//                this.index = index;
+//                this.countQuery = countQuery;
+//            }
+//        }
+//
+//        private class Gw{
+//            private Gw() {}
+//
+//        }
+//        private class Fw{
+//            private Fw() {}
+//        }
+//    }
+//
+//    private class ConfigNas{
+//        private String host;
+//        private String port;
+//        private String user;
+//        private String password;
+//
+//        private class Storage{
+//            private int limit_percentage;
+//
+//            private Storage() {}
+//
+//            public Storage(int limit_percentage) {
+//                this.limit_percentage = limit_percentage;
+//            }
+//        }
+//    }
 }
