@@ -3,7 +3,7 @@
     "host": "0.0.0.0",
     "port": 8051,
     "debug": true,
-    "title": "KBA - Dashboard",
+    "title": "NBA - fashboard",
     "boxes": {
       "name1": "1",
       "name2": "2",
@@ -12,8 +12,8 @@
     }
   },
   "es": {
-    "host": "ernie",
-    "port": 9200,
+    "host": "dornie",
+    "port": 9110,
     "srv": {
       "index": "srv-*",
       "countQuery": "loglevel:ERROR OR WARN OR FATAL"
@@ -24,9 +24,9 @@
     }
   },
   "nas": {
-    "test": "testing",
+    "test": "messing",
     "host": "",
-    "port": "5000",
+    "port": "2050",
     "user": "",
     "passwd": "",
     "storage": {
